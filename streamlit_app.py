@@ -1,20 +1,17 @@
 import streamlit as st
 import openai
 
-st.title("Chatting with ChatGPT")
+st.title("Translation Comparison")
 st.sidebar.header("Instructions")
 st.sidebar.info(
-    '''This is a web application that allows you to interact with 
-       the OpenAI API's implementation of the ChatGPT model.
-       Enter a **query** in the **text box** and **press enter** to receive 
-       a **response** from the ChatGPT
+    '''This is a web application that allows you to compare translations from English to German
+    from multiple translation services.
        '''
     )
 
 
 # Set the model engine and your OpenAI API key
-model_engine = "text-davinci-003"
-# openai.api_key = st.secrets["OPENAI_API_KEY"] #follow step 4 to get a secret_key
+model_engine = "text-curie-001"
 
 
 def main():
